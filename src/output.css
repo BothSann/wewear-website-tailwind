@@ -1207,6 +1207,10 @@ h3{
 }
 
 @media (min-width: 1280px){
+  .xl\:mb-6{
+    margin-bottom: 1.5rem;
+  }
+
   .xl\:mb-8{
     margin-bottom: 2rem;
   }
