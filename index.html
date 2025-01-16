@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeWear</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script defer src="script.js"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body class="bg-white font-rubik">
+    <!-- Navigation -->
+    <nav class="fixed z-50 w-full transition-all duration-300 xl:py-2">
+      <div class="px-4 mx-auto max-w-7xl">
+        <div class="flex items-center justify-between h-16">
+          <div>
+            <span class="text-xl font-bold text-white md:text-2xl xl:text-3xl"
+              >WeWear</span
+            >
+          </div>
+
+          <div class="hidden gap-8 font-medium uppercase lg:flex xl:text-lg">
+            <a
+              href="#mission"
+              class="text-white transition-colors hover:text-purple-300"
+              >Mission</a
+            >
+            <a
+              href="#impact"
+              class="text-white transition-colors hover:text-purple-300"
+              >Impact</a
+            >
+            <a
+              href="#donate"
+              class="text-white transition-colors hover:text-purple-300"
+              >Donate</a
+            >
+            <a
+              href="#contact"
+              class="text-white transition-colors hover:text-purple-300"
+              >Contact</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section with Background Image -->
+    <section
+      class="relative flex items-center justify-center min-h-screen pt-16"
+    >
+      <div class="absolute inset-0 z-0">
+        <img
+          src="/images/hero.jpg"
+          alt="Team Photo"
+          class="object-cover w-full h-full brightness-50"
+        />
+      </div>
+
+      <div class="relative z-10 px-4 py-20 mx-auto text-center max-w-7xl">
+        <h1
+          class="mb-6 text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-white to-purple-400 md:text-5xl xl:text-7xl"
+          data-aos="fade-up"
+        >
+          Clothing Cambodia with Dignity
+        </h1>
+        <p
+          class="max-w-4xl mx-auto mb-8 text-base text-gray-200 md:text-lg xl:text-2xl"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Join us in our mission to provide quality clothing to vulnerable
+          communities in Cambodia, promoting dignity, health, and social
+          inclusion.
+        </p>
+        <div data-aos="fade-up" data-aos-delay="200">
+          <a
+            href="#donate"
+            class="inline-block px-4 py-2 text-sm font-semibold text-white transition-all transform bg-purple-600 rounded-lg xl:px-6 xl:py-4 xl:text-lg hover:bg-purple-700 hover:scale-105"
+          >
+            Make a Difference Today
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section id="mission" class="py-20 bg-white lg:py-40">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 data-aos="fade-up">Our Mission</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div
+            class="p-6 bg-purple-50 rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="mb-4 text-purple-600">
+              <i class="section-icons fas fa-tshirt"></i>
+            </div>
+            <h3>Dignity Through Clothing</h3>
+            <p class="section-text">
+              Providing quality clothing to restore dignity and boost confidence
+              in vulnerable communities.
+            </p>
+          </div>
+
+          <div
+            class="p-6 bg-purple-50 rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="mb-4 text-purple-600">
+              <i class="section-icons fas fa-globe-asia"></i>
+            </div>
+            <h3>Environmental Impact</h3>
+            <p class="section-text">
+              Reducing textile waste through sustainable clothing donation and
+              distribution practices.
+            </p>
+          </div>
+          <div
+            class="p-6 bg-purple-50 rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="mb-4 text-purple-600">
+              <i class="section-icons fas fa-hands-helping"></i>
+            </div>
+            <h3>Community Building</h3>
+            <p class="section-text">
+              Creating lasting connections between donors and communities to
+              foster sustainable change.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-purple-50">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 data-aos="fade-up">Our Work in Action</h2>
+        <div class="grid gap-8 md:grid-cols-3">
+          <div
+            class="overflow-hidden shadow-lg rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <img
+              src="images/hero.jpg"
+              alt="Donation Collection"
+              class="object-cover w-full h-64 mb-4"
+            />
+            <div class="p-4">
+              <h3>Donation Collection Drive</h3>
+              <p class="section-text">
+                Community members coming together to donate clothes
+              </p>
+            </div>
+          </div>
+          <div
+            class="overflow-hidden shadow-lg rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <img
+              src="images/hero.jpg"
+              alt="Sorting Clothes"
+              class="object-cover w-full h-64 mb-4"
+            />
+            <div class="p-4">
+              <h3>Sorting and Processing</h3>
+              <p class="section-text">
+                Volunteers preparing donations for distribution
+              </p>
+            </div>
+          </div>
+          <div
+            class="overflow-hidden shadow-lg rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <img
+              src="images/hero.jpg"
+              alt="Distribution Event"
+              class="object-cover w-full h-64 mb-4"
+            />
+            <div class="p-4">
+              <h3>Community Distribution</h3>
+              <p class="section-text">
+                Bringing hope and dignity to those in need
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Impact Statistics -->
+    <section
+      class="py-20 text-white bg-gradient-to-r from-purple-600 to-purple-800"
+    >
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 data-aos="fade-up">Our Impact</h2>
+        <div class="grid gap-8 text-center md:grid-cols-4">
+          <div data-aos="fade-up" data-aos-delay="100">
+            <div class="mb-2 text-3xl font-bold md:text-4xl xl:text-5xl">
+              35k+
+            </div>
+            <div class="text-purple-200 xl:text-lg">People Helped</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="200">
+            <div class="mb-2 text-3xl font-bold md:text-4xl xl:text-5xl">
+              50+
+            </div>
+            <div class="text-purple-200 xl:text-lg">Communities Served</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="300">
+            <div class="mb-2 text-3xl font-bold md:text-4xl xl:text-5xl">
+              100k+
+            </div>
+            <div class="text-purple-200 xl:text-lg">Clothes Donated</div>
+          </div>
+          <div data-aos="fade-up" data-aos-delay="400">
+            <div class="mb-2 text-4xl font-bold md:text-4xl xl:text-5xl">
+              1k+
+            </div>
+            <div class="text-purple-200 xl:text-lg">Active Volunteers</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Donation Process -->
+    <section id="donate" class="py-20 bg-white">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 data-aos="fade-up">How to Help</h2>
+        <div class="grid gap-9 md:grid-cols-3">
+          <div class="text-center" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-purple-100 rounded-full xl:mb-8"
+            >
+              <span class="text-2xl font-bold text-purple-600">1</span>
+            </div>
+            <h3 class="">Collect</h3>
+            <p class="text-gray-600 xl:text-lg">
+              Gather gently used or new clothing items that are clean and in
+              good condition.
+            </p>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-purple-100 rounded-full xl:mb-8"
+            >
+              <span class="text-2xl font-bold text-purple-600">2</span>
+            </div>
+            <h3>Contact</h3>
+            <p class="text-gray-600 xl:text-lg">
+              Reach out to our team to arrange a pickup or drop-off of your
+              donation.
+            </p>
+          </div>
+          <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+            <div
+              class="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-purple-100 rounded-full xl:mb-8"
+            >
+              <span class="text-2xl font-bold text-purple-600">3</span>
+            </div>
+            <h3>Transform</h3>
+            <p class="text-gray-600 xl:text-lg">
+              Your donation will be sorted and distributed to those who need it
+              most.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 bg-purple-50">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 data-aos="fade-up">Stories of Impact</h2>
+        <div class="grid gap-8 md:grid-cols-2">
+          <div
+            class="p-6 shadow-2xl bg-gradient-to-br from-purple-600 to-purple-800 rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <p class="mb-4 text-gray-100 xl:text-lg">
+              "The clothes we received from WeWear have made such a difference
+              in our children's lives. They can now attend school with
+              confidence and dignity."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="border-4 border-white rounded-full">
+                <img
+                  class="object-cover w-16 h-16 rounded-full shadow-lg p-[3px]"
+                  src="images/user-6.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="font-semibold tracking-tighter text-gray-100 xl:text-lg"
+              >
+                - Monik, Community Leader
+              </div>
+            </div>
+          </div>
+          <div
+            class="p-6 bg-white shadow-2xl rounded-xl"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <p class="mb-4 text-gray-600 xl:text-lg">
+              "Being able to donate through WeWear has been incredibly
+              rewarding. Knowing our clothes are making a real difference means
+              everything."
+            </p>
+            <div class="flex items-center gap-3">
+              <div class="border-4 border-purple-600 rounded-full">
+                <img
+                  class="object-cover w-16 h-16 rounded-full shadow-lg shadow-gray-400 p-[3px]"
+                  src="images/bothsann.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="font-semibold tracking-tighter xl:text-lg">
+                - Both Sann, Regular Donor
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="px-4 mx-auto max-w-7xl">
+        <h2 data-aos="fade-up">Get Involved</h2>
+        <div class="max-w-xl mx-auto">
+          <form
+            class="space-y-6 xl:text-lg"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div>
+              <label class="block mb-2 text-gray-700" for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:outline-none focus:ring-purple-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-gray-700" for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:outline-none focus:ring-purple-500 focus:border-transparent"
+              />
+            </div>
+            <div>
+              <label class="block mb-2 text-gray-700" for="message"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                rows="4"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:outline-none focus:ring-purple-500 focus:border-transparent"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full py-3 font-semibold text-white transition-colors bg-purple-600 rounded-lg hover:bg-purple-700"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="py-12 text-white bg-gradient-to-br from-gray-800 to-gray-900"
+    >
+      <div class="px-4 mx-auto max-w-7xl">
+        <div class="grid gap-8 justify-items-center md:grid-cols-3">
+          <div class="flex flex-col items-center md:items-start">
+            <h3>WeWear</h3>
+            <p class="text-gray-300">
+              Making a difference in Cambodia, one piece of clothing at a time.
+            </p>
+          </div>
+          <div class="flex flex-col items-center md:items-start">
+            <h3>Contact</h3>
+            <p class="text-gray-300">
+              <i class="mr-2 fas fa-envelope"></i>info@wewear.org
+            </p>
+            <p class="text-gray-300">
+              <i class="mr-2 fas fa-phone"></i>+855 86 795 490
+            </p>
+          </div>
+          <div class="flex flex-col items-center md:items-start">
+            <h3>Follow Us</h3>
+            <div class="flex space-x-4">
+              <a
+                href="#"
+                class="text-gray-300 transition-colors hover:text-purple-400"
+              >
+                <i class="text-xl xl:text-2xl fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 transition-colors hover:text-purple-400"
+              >
+                <i class="text-xl xl:text-2xl fab fa-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="text-gray-300 transition-colors hover:text-purple-400"
+              >
+                <i class="text-xl xl:text-2xl fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pt-8 mt-8 text-center text-gray-400 border-t border-gray-700"
+        >
+          <p class="xl:text-lg">&copy; 2025 WeWear. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Initialize AOS -->
+    <script></script>
+  </body>
+</html>

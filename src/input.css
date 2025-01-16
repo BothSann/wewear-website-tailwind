@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  h2 {
+    @apply mb-10 text-4xl font-bold text-center text-gray-800 xl:mb-24 lg:text-5xl xl:text-6xl md:mb-14;
+  }
+
+  h3 {
+    @apply mb-2 text-xl font-bold xl:text-2xl;
+  }
+
+  .section-text {
+    @apply text-base text-gray-600 lg:text-lg;
+  }
+
+  .section-icons {
+    @apply text-4xl xl:text-5xl;
+  }
+}
